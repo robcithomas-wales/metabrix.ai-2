@@ -67,7 +67,7 @@ export default function Home() {
           </div>
           <div className="relative">
             <img
-              src="https://d2xsxph8kpxj0f.cloudfront.net/310519663445266744/UkVaNGgAXNZ4UUE68c993S/hero-metabolic-health-BdJas3SvZLokWUncyBMPWR.webp"
+              src="/hero-metabolic-health.webp"
               alt="Metabolic Health Visualization"
               className="w-full h-auto rounded-2xl shadow-lg"
             />
@@ -152,7 +152,7 @@ export default function Home() {
               </div>
               <div className="relative">
                 <img
-                  src="https://d2xsxph8kpxj0f.cloudfront.net/310519663445266744/UkVaNGgAXNZ4UUE68c993S/metabolic-domains-visual-ccazJGN2QQEx9pjD7XWPjX.webp"
+                  src="/metabolic-domains-visual.webp"
                   alt="Five Metabolic Domains"
                   className="w-full h-auto rounded-2xl"
                 />
@@ -163,8 +163,8 @@ export default function Home() {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="relative order-2 md:order-1">
                 <img
-                  src="https://d2xsxph8kpxj0f.cloudfront.net/310519663445266744/UkVaNGgAXNZ4UUE68c993S/hero-pt-channel-9sKMNQkHkXM7ZLtey2GUkS.webp"
-                  alt="Deterministic Scoring"
+                  src="/hero-pt-channel.webp"
+                  alt="Personal Trainer Channel"
                   className="w-full h-auto rounded-2xl"
                 />
               </div>
@@ -201,7 +201,7 @@ export default function Home() {
                 `}</style>
                 <div className="relative w-full aspect-square flex items-center justify-center">
                   <img
-                    src="https://d2xsxph8kpxj0f.cloudfront.net/310519663445266744/UkVaNGgAXNZ4UUE68c993S/Screenshot2026-03-28at10.19.31_4ba3e4db.png"
+                    src="/heartbeat-visualization.png"
                     alt="Metabolic Heartbeat Visualization"
                     className="w-full h-auto"
                   />
