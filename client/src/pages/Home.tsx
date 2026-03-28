@@ -133,15 +133,15 @@ export default function Home() {
               <div className="space-y-6">
                 <h3 className="text-3xl font-bold text-foreground">Five metabolic domains</h3>
                 <p className="text-lg text-muted-foreground">
-                  Every week, Metabrix scores you across the five domains that define metabolic health: blood sugar, body fat, cardiovascular, habits, and recovery.
+                  Every week, metabrix.ai scores you across the five domains that define metabolic health: blood sugar, body fat, cardiovascular, habits, and recovery.
                 </p>
                 <ul className="space-y-3">
                   {[
-                    "Blood Sugar (Glycaemic) — 25%",
-                    "Body Fat (Adiposity) — 25%",
-                    "Cardiovascular — 20%",
-                    "Habits (Behaviour) — 15%",
-                    "Recovery — 15%"
+                    "Blood Sugar (Glycaemic)",
+                    "Body Fat (Adiposity)",
+                    "Cardiovascular",
+                    "Habits (Behaviour)",
+                    "Recovery"
                   ].map((item, i) => (
                     <li key={i} className="flex items-center gap-3">
                       <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0" />
@@ -186,11 +186,63 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Feature 3: AI Coaching */}
+            {/* Feature 3: Real-time Monitoring */}
+            <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
+              <div className="relative">
+                <style>{`
+                  @keyframes moveAcrossGraph {
+                    0% { left: 15%; }
+                    50% { left: 75%; }
+                    100% { left: 15%; }
+                  }
+                  .animated-dot {
+                    animation: moveAcrossGraph 4s ease-in-out infinite;
+                  }
+                `}</style>
+                <div className="relative w-full aspect-square flex items-center justify-center">
+                  <img
+                    src="https://d2xsxph8kpxj0f.cloudfront.net/310519663445266744/UkVaNGgAXNZ4UUE68c993S/Screenshot2026-03-28at10.19.31_4ba3e4db.png"
+                    alt="Metabolic Heartbeat Visualization"
+                    className="w-full h-auto"
+                  />
+                  <div className="absolute animated-dot" style={{
+                    width: '14px',
+                    height: '14px',
+                    backgroundColor: '#16A89B',
+                    borderRadius: '50%',
+                    boxShadow: '0 0 12px rgba(22, 168, 155, 0.8), 0 0 24px rgba(22, 168, 155, 0.4)',
+                    top: '50%',
+                    transform: 'translateY(-50%)',
+                    zIndex: 10
+                  }} />
+                </div>
+              </div>
+              <div className="space-y-6">
+                <h3 className="text-3xl font-bold text-foreground">Real-time metabolic monitoring</h3>
+                <p className="text-lg text-muted-foreground">
+                  metabrix.ai continuously tracks your metabolic signals and updates your score weekly. Watch your progress in real-time as you implement changes.
+                </p>
+                <ul className="space-y-3">
+                  {[
+                    "Weekly score updates based on your data",
+                    "Real-time tracking of your primary constraint",
+                    "Trend analysis over 4, 8, 12, and 16 weeks",
+                    "Predictive forecasting of metabolic trajectory"
+                  ].map((item, i) => (
+                    <li key={i} className="flex items-center gap-3">
+                      <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0" />
+                      <span className="text-foreground">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+
+            {/* Feature 4: AI Coaching */}
             <div className="bg-muted rounded-2xl p-12 border border-primary/10">
               <h3 className="text-3xl font-bold text-foreground mb-6">AI coaching with context</h3>
               <p className="text-lg text-muted-foreground mb-8">
-                The AI in Metabrix is different. It knows your scores, your trend, your primary constraint, and your actual data. The advice you get is not generic—it's built from your metabolic signals.
+                The AI in metabrix.ai is different. It knows your scores, your trend, your primary constraint, and your actual data. The advice you get is not generic—it's built from your metabolic signals.
               </p>
               <div className="grid md:grid-cols-2 gap-6">
                 {[
