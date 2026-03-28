@@ -2,8 +2,10 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { ArrowRight, CheckCircle2, Heart, TrendingUp, Users, Zap } from "lucide-react";
 import { useState } from "react";
+import { useLocation } from "wouter";
 
 export default function Home() {
+  const [, setLocation] = useLocation();
   const [activeTab, setActiveTab] = useState("consumers");
 
   return (
@@ -27,8 +29,8 @@ export default function Home() {
             <a href="#pt-channel" className="text-sm text-muted-foreground hover:text-foreground transition">
               For PTs
             </a>
-            <Button className="bg-primary hover:bg-primary/90 text-white">
-              Get Started
+            <Button onClick={() => setLocation("/contact")} className="bg-primary hover:bg-primary/90 text-white">
+              Contact us
             </Button>
           </div>
         </div>
@@ -46,17 +48,12 @@ export default function Home() {
                 Catch the problem before it becomes the diagnosis
               </h1>
               <p className="text-lg text-muted-foreground leading-relaxed max-w-xl">
-                Metabrix turns metabolic signals into a clear weekly picture of where you stand, what's holding you back, and what to focus on next.
+                metabrix.ai turns metabolic signals into a clear weekly picture of where you stand, what's holding you back, and what to focus on next.
               </p>
             </div>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="bg-primary hover:bg-primary/90 text-white">
-                Start Free Trial <ArrowRight className="ml-2 w-4 h-4" />
-              </Button>
-              <Button size="lg" variant="outline">
-                Watch Demo
-              </Button>
-            </div>
+            <Button onClick={() => setLocation("/contact")} size="lg" className="bg-primary hover:bg-primary/90 text-white">
+              Get Started <ArrowRight className="ml-2 w-4 h-4" />
+            </Button>
             <div className="flex items-center gap-8 pt-4">
               <div>
                 <p className="text-2xl font-bold text-foreground">13.6M</p>
@@ -86,7 +83,7 @@ export default function Home() {
               Why existing tools fail
             </h2>
             <p className="text-lg text-muted-foreground">
-              Between your last blood test and your next one, a lot is happening. Fasting glucose creeps. Visceral fat accumulates. Sleep deteriorates. Energy declines. None of it crosses a diagnostic threshold—until it does.
+              Between your last blood test and your next one, a lot is happening. Fasting glucose creeps. Visceral fat accumulates. Sleep deteriorates. Energy declines. None of it crosses a diagnostic threshold—until it does. metabrix.ai bridges this gap.
             </p>
           </div>
 
@@ -123,7 +120,7 @@ export default function Home() {
         <div className="container">
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-              The Metabrix difference
+              The metabrix.ai difference
             </h2>
             <p className="text-lg text-muted-foreground">
               Deterministic scoring. Transparent logic. AI coaching built on your actual data.
@@ -233,7 +230,7 @@ export default function Home() {
               Simple, transparent pricing
             </h2>
             <p className="text-lg text-muted-foreground">
-              Less than a single private GP appointment. Available every week.
+              Premium metabolic intelligence at a fraction of private healthcare costs.
             </p>
           </div>
 
@@ -243,11 +240,11 @@ export default function Home() {
               <h3 className="text-2xl font-bold text-foreground mb-2">Core</h3>
               <p className="text-muted-foreground mb-6">Entry point to metabolic intelligence</p>
               <div className="mb-6">
-                <span className="text-4xl font-bold text-foreground">£39.99</span>
+                <span className="text-4xl font-bold text-foreground">£49.99</span>
                 <span className="text-muted-foreground">/month</span>
               </div>
-              <Button className="w-full bg-primary hover:bg-primary/90 text-white mb-8">
-                Start Free Trial
+              <Button onClick={() => setLocation("/contact")} className="w-full bg-primary hover:bg-primary/90 text-white mb-8">
+                Get Started
               </Button>
               <ul className="space-y-4">
                 {[
@@ -274,11 +271,11 @@ export default function Home() {
               <h3 className="text-2xl font-bold text-foreground mb-2">Premium</h3>
               <p className="text-muted-foreground mb-6">Full platform with AI coaching</p>
               <div className="mb-6">
-                <span className="text-4xl font-bold text-foreground">£79.99</span>
+                <span className="text-4xl font-bold text-foreground">£99.99</span>
                 <span className="text-muted-foreground">/month</span>
               </div>
-              <Button className="w-full bg-primary hover:bg-primary/90 text-white mb-8">
-                Start Free Trial
+              <Button onClick={() => setLocation("/contact")} className="w-full bg-primary hover:bg-primary/90 text-white mb-8">
+                Get Started
               </Button>
               <ul className="space-y-4">
                 {[
@@ -304,7 +301,7 @@ export default function Home() {
           <div className="mt-12 p-8 bg-muted rounded-xl border border-primary/10 text-center">
             <p className="text-muted-foreground mb-2">Annual billing available</p>
             <p className="text-lg font-semibold text-foreground">
-              Core: £399/year | Premium: £799/year
+              Core: £499/year | Premium: £999/year
             </p>
           </div>
         </div>
@@ -318,7 +315,7 @@ export default function Home() {
               For Personal Trainers
             </h2>
             <p className="text-lg text-muted-foreground">
-              See the 165 hours you can't see
+              See the 165 hours you can't see with metabrix.ai
             </p>
           </div>
 
@@ -328,10 +325,10 @@ export default function Home() {
                 A personal trainer sees their client for 2–3 hours per week. The other 165 hours are invisible. You prescribe training, deliver sessions, and operate on client self-report. You're excellent at programming but have almost no visibility into the metabolic environment the training is happening inside.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Metabrix gives you a weekly metabolic snapshot of every client—recovery state, nutrition patterns, glucose trends, and body composition trajectory.
+                metabrix.ai gives you a weekly metabolic snapshot of every client—recovery state, nutrition patterns, glucose trends, and body composition trajectory.
               </p>
               <div className="space-y-3">
-                <p className="font-semibold text-foreground">Metabrix does not compete with you. It makes you significantly better at your job.</p>
+                <p className="font-semibold text-foreground">metabrix.ai does not compete with you. It makes you significantly better at your job.</p>
                 <ul className="space-y-2">
                   {[
                     "See recovery state before each session",
@@ -360,7 +357,7 @@ export default function Home() {
                     <p className="text-2xl font-bold text-primary">15%</p>
                   </div>
                 </div>
-                <Button className="w-full bg-primary hover:bg-primary/90 text-white">
+                <Button onClick={() => setLocation("/contact")} className="w-full bg-primary hover:bg-primary/90 text-white">
                   Become a Partner
                 </Button>
                 <p className="text-xs text-muted-foreground text-center mt-4">
@@ -402,10 +399,10 @@ export default function Home() {
         <div className="container">
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-              Premium features for the serious
+              Premium features in metabrix.ai
             </h2>
             <p className="text-lg text-muted-foreground">
-              Strategic additions that justify premium pricing
+              Strategic additions that justify premium positioning
             </p>
           </div>
 
@@ -446,19 +443,14 @@ export default function Home() {
       <section className="py-20 md:py-32 bg-gradient-to-br from-primary via-primary/90 to-primary/80">
         <div className="container text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Catch the problem before it becomes the diagnosis
+            Ready to take control of your metabolic health?
           </h2>
           <p className="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
-            Join hundreds of professionals who are taking control of their metabolic health with deterministic intelligence and personalized AI coaching.
+            Join professionals who are taking control of their metabolic health with deterministic intelligence and personalized AI coaching from metabrix.ai.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-white hover:bg-white/90 text-primary">
-              Start Your Free Trial <ArrowRight className="ml-2 w-4 h-4" />
-            </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-              Schedule a Demo
-            </Button>
-          </div>
+          <Button onClick={() => setLocation("/contact")} size="lg" className="bg-white hover:bg-white/90 text-primary">
+            Get Started <ArrowRight className="ml-2 w-4 h-4" />
+          </Button>
         </div>
       </section>
 
@@ -501,7 +493,7 @@ export default function Home() {
             </div>
           </div>
           <div className="border-t border-white/10 pt-8 text-center text-sm text-white/70">
-            <p>&copy; 2026 Metabrix. All rights reserved.</p>
+            <p>&copy; 2026 metabrix.ai. All rights reserved.</p>
           </div>
         </div>
       </footer>
