@@ -11,22 +11,22 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-white">
       {/* Navigation */}
-      <nav className="sticky top-0 z-50 bg-white border-b border-border">
+      <nav className="sticky top-0 z-50 bg-[#111111] border-b border-white/10">
         <div className="container flex items-center justify-between h-16">
-          <div className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center">
-              <Heart className="w-5 h-5 text-white" />
-            </div>
-            <span className="text-xl font-bold text-foreground">metabrix.ai</span>
+          <div className="flex items-center gap-3">
+            <img src="/logo.svg" alt="metabrix.ai icon" className="h-9 w-9" />
+            <span className="text-xl font-bold tracking-tight">
+              <span className="text-white">metabrix</span><span className="text-[#4ECDC4]">.ai</span>
+            </span>
           </div>
           <div className="hidden md:flex items-center gap-8">
-            <a href="#features" className="text-sm text-muted-foreground hover:text-foreground transition">
+            <a href="#features" className="text-sm text-white/60 hover:text-white transition">
               Features
             </a>
-            <a href="#pricing" className="text-sm text-muted-foreground hover:text-foreground transition">
+            <a href="#pricing" className="text-sm text-white/60 hover:text-white transition">
               Pricing
             </a>
-            <a href="#pt-channel" className="text-sm text-muted-foreground hover:text-foreground transition">
+            <a href="#pt-channel" className="text-sm text-white/60 hover:text-white transition">
               For PTs
             </a>
             <Button onClick={() => setLocation("/contact")} className="bg-primary hover:bg-primary/90 text-white">
@@ -292,7 +292,7 @@ export default function Home() {
               <h3 className="text-2xl font-bold text-foreground mb-2">Core</h3>
               <p className="text-muted-foreground mb-6">Entry point to metabolic intelligence</p>
               <div className="mb-6">
-                <span className="text-4xl font-bold text-foreground">£49.99</span>
+                <span className="text-4xl font-bold text-foreground">£39.99</span>
                 <span className="text-muted-foreground">/month</span>
               </div>
               <Button onClick={() => setLocation("/contact")} className="w-full bg-primary hover:bg-primary/90 text-white mb-8">
@@ -323,7 +323,7 @@ export default function Home() {
               <h3 className="text-2xl font-bold text-foreground mb-2">Premium</h3>
               <p className="text-muted-foreground mb-6">Full platform with AI coaching</p>
               <div className="mb-6">
-                <span className="text-4xl font-bold text-foreground">£99.99</span>
+                <span className="text-4xl font-bold text-foreground">£79.99</span>
                 <span className="text-muted-foreground">/month</span>
               </div>
               <Button onClick={() => setLocation("/contact")} className="w-full bg-primary hover:bg-primary/90 text-white mb-8">
@@ -402,7 +402,7 @@ export default function Home() {
                 <div className="space-y-4 mb-6">
                   <div>
                     <p className="text-sm text-muted-foreground">Monthly subscription</p>
-                    <p className="text-2xl font-bold text-foreground">£49/month</p>
+                    <p className="text-2xl font-bold text-foreground">£39.99/month</p>
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Commission on referred clients</p>
