@@ -51,9 +51,11 @@ export default function Home() {
                 metabrix.ai turns metabolic signals into a clear weekly picture of where you stand, what's holding you back, and what to focus on next.
               </p>
             </div>
-            <Button onClick={() => setLocation("/contact")} size="lg" className="bg-primary hover:bg-primary/90 text-white">
-              Get Started <ArrowRight className="ml-2 w-4 h-4" />
-            </Button>
+            <a href="https://app.metabrix.ai">
+              <Button size="lg" className="bg-primary hover:bg-primary/90 text-white">
+                Get Started <ArrowRight className="ml-2 w-4 h-4" />
+              </Button>
+            </a>
             <div className="flex items-center gap-8 pt-4">
               <div>
                 <p className="text-2xl font-bold text-foreground">13.6M</p>
@@ -295,9 +297,11 @@ export default function Home() {
                 <span className="text-4xl font-bold text-foreground">£39.99</span>
                 <span className="text-muted-foreground">/month</span>
               </div>
-              <Button onClick={() => setLocation("/contact")} className="w-full bg-primary hover:bg-primary/90 text-white mb-8">
-                Get Started
-              </Button>
+              <a href="https://app.metabrix.ai" className="block w-full mb-8">
+                <Button className="w-full bg-primary hover:bg-primary/90 text-white">
+                  Get Started
+                </Button>
+              </a>
               <ul className="space-y-4">
                 {[
                   "5-domain metabolic scoring",
@@ -326,9 +330,11 @@ export default function Home() {
                 <span className="text-4xl font-bold text-foreground">£79.99</span>
                 <span className="text-muted-foreground">/month</span>
               </div>
-              <Button onClick={() => setLocation("/contact")} className="w-full bg-primary hover:bg-primary/90 text-white mb-8">
-                Get Started
-              </Button>
+              <a href="https://app.metabrix.ai" className="block w-full mb-8">
+                <Button className="w-full bg-primary hover:bg-primary/90 text-white">
+                  Get Started
+                </Button>
+              </a>
               <ul className="space-y-4">
                 {[
                   "Everything in Core, plus:",
@@ -353,7 +359,7 @@ export default function Home() {
           <div className="mt-12 p-8 bg-muted rounded-xl border border-primary/10 text-center">
             <p className="text-muted-foreground mb-2">Annual billing available</p>
             <p className="text-lg font-semibold text-foreground">
-              Core: £499/year | Premium: £999/year
+              Core: £399/year | Premium: £899/year
             </p>
           </div>
         </div>
@@ -402,16 +408,18 @@ export default function Home() {
                 <div className="space-y-4 mb-6">
                   <div>
                     <p className="text-sm text-muted-foreground">Monthly subscription</p>
-                    <p className="text-2xl font-bold text-foreground">£39.99/month</p>
+                    <p className="text-2xl font-bold text-foreground">£44.99/month</p>
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Commission on referred clients</p>
                     <p className="text-2xl font-bold text-primary">15%</p>
                   </div>
                 </div>
-                <Button onClick={() => setLocation("/contact")} className="w-full bg-primary hover:bg-primary/90 text-white">
-                  Become a Partner
-                </Button>
+                <a href="https://app.metabrix.ai/pt" className="block w-full">
+                  <Button className="w-full bg-primary hover:bg-primary/90 text-white">
+                    Become a Partner
+                  </Button>
+                </a>
                 <p className="text-xs text-muted-foreground text-center mt-4">
                   Founding partners receive 30% commission
                 </p>
@@ -500,9 +508,11 @@ export default function Home() {
           <p className="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
             Join professionals who are taking control of their metabolic health with deterministic intelligence and personalized AI coaching from metabrix.ai.
           </p>
-          <Button onClick={() => setLocation("/contact")} size="lg" className="bg-white hover:bg-white/90 text-primary">
-            Get Started <ArrowRight className="ml-2 w-4 h-4" />
-          </Button>
+          <a href="https://app.metabrix.ai">
+            <Button size="lg" className="bg-white hover:bg-white/90 text-primary">
+              Get Started <ArrowRight className="ml-2 w-4 h-4" />
+            </Button>
+          </a>
         </div>
       </section>
 
